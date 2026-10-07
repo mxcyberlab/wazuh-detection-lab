@@ -31,7 +31,7 @@ ssh usuarioinventado@192.168.255.133
 - **Source IP:** 192.168.255.129
 - **MITRE ATT&CK:** T1110 (BRUTE FORCE)
 
-![Wazuh alert](../screenshots/brute-force-alert.png)
+![Wazuh alert](https://github.com/mxcyberlab/wazuh-detection-lab/blob/main/reports/screenshots/brute-force-alert.png?raw=true)
 
 ## Analysis
 Wazuh correlated several failed authentication events coming from the same source IP (192.168.255.129) in a short time window and raised a level 10 alert. This pattern is consistent with a password guessing attempt (MITRE T1110). In this case the source was my own Kali VM, so it is a controlled simulation.
